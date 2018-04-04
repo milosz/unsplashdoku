@@ -27,14 +27,22 @@ class action_plugin_unsplashdoku extends DokuWiki_Action_Plugin {
 		$selection = $this->getConf('selection');
 		if ( !empty($this->getConf('keyword'))) {
 			$keyword = '?' . $this->getConf('keyword');
+		} else {
+			$keyword = '';
 		}
+
 		$background_image = 'background-image: ' . 'url(https://source.unsplash.com/' . $selection . '/' . $keyword . ');';
 
 		if ( !empty($this->getConf('background_color'))) {
 			$background_color = 'background-color: ' . $this->getConf('background_color') . ' !important;';
+		} else {
+			$background_color = '';
 		}
+
 		if ( !empty($this->getConf('background_blend'))) {
 			$background_blend = 'background-blend-mode: ' . $this->getConf('background_blend') . ';';
+		} else {
+			$background_blend = '';
 		}
 
 		$html_style = 'html { height: 100%; }';
