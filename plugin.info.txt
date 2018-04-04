@@ -1,0 +1,8 @@
+base    unsplashdoku
+author  Milosz Galazka
+email   milosz@sleeplessbeastie.eu
+date    2018-04-04
+name    unsplashdoku plugin
+desc    set background using Unsplash Source https://source.unsplash.com
+url     https://www.dokuwiki.org/plugin:unsplashdoku
+version 1.0
